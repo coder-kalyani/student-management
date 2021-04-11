@@ -62,7 +62,7 @@ public class StudentImpl implements StudentService {
 	
 	public Optional<StudentEntity> deleteStudentbyid(Long id) {
 		Optional<StudentEntity> res = studentJpa.findById(id);
-		if(res.isEmpty()) {
+		if(res == null) {
 			return res;
 		}
 		else {
