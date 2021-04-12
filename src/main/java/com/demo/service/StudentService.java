@@ -24,5 +24,7 @@ public interface StudentService {
 	
 	public StudentEntity updateStudent(StudentEntity studentEntity);
 	
+	public Optional<StudentEntity> deleteStudentbyid(Long id);
+	
 
 }

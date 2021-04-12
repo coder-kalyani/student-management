@@ -59,4 +59,15 @@ public class StudentImpl implements StudentService {
 		return res;
 
 	}
+	
+	public Optional<StudentEntity> deleteStudentbyid(Long id) {
+		Optional<StudentEntity> res = studentJpa.findById(id);
+		if(res.isEmpty()) {
+			return res;
+		}
+		else {
+			studentJpa.deleteById(id);;
+		}
+		return res;
+	}
 }
