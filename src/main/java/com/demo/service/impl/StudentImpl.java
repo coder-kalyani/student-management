@@ -66,7 +66,7 @@ public class StudentImpl implements StudentService {
 			return res;
 		}
 		else {
-			studentJpa.deleteById(id);;
+			studentJpa.deleteById(id);
 		}
 		return res;
 	}
